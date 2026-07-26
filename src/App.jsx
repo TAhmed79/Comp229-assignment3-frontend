@@ -4,6 +4,8 @@ import ProjectForm from "./pages/ProjectForm";
 import AdminServices from "./pages/AdminServices";
 import ServiceForm from "./pages/ServiceForm";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AdminReferences from "./pages/AdminReferences";
+import ReferenceForm from "./pages/ReferenceForm";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -32,6 +34,9 @@ function App() {
           <Route path="/admin/services" element={<AdminServices />}/>
           <Route path="/admin/services/add" element={<ServiceForm />}/>
           <Route path="/admin/services/edit/:id" element={<ServiceForm />}/>
+          <Route path="/admin/references" element={<AdminReferences />} />
+          <Route path="/admin/references/add" element={<ReferenceForm />} />
+          <Route path="/admin/references/edit/:id" element={<ReferenceForm />} />
         </Routes>
       </main>
     </BrowserRouter>
