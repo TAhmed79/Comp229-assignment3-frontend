@@ -1,6 +1,8 @@
 import AdminDashboard from "./pages/AdminDashboard";
 import AdminProjects from "./pages/AdminProjects";
 import ProjectForm from "./pages/ProjectForm";
+import AdminServices from "./pages/AdminServices";
+import ServiceForm from "./pages/ServiceForm";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
@@ -25,15 +27,11 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/admin/projects" element={<AdminProjects />} />
-          <Route
-    path="/admin/projects/add"
-    element={<ProjectForm />}
-/>
-
-<Route
-    path="/admin/projects/edit/:id"
-    element={<ProjectForm />}
-/>
+          <Route path="/admin/projects/add" element={<ProjectForm />}/>
+          <Route path="/admin/projects/edit/:id" element={<ProjectForm />}/>
+          <Route path="/admin/services" element={<AdminServices />}/>
+          <Route path="/admin/services/add" element={<ServiceForm />}/>
+          <Route path="/admin/services/edit/:id" element={<ServiceForm />}/>
         </Routes>
       </main>
     </BrowserRouter>
