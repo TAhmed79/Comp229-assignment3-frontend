@@ -11,3 +11,4 @@ Pages included:
 - Contact Me
 
 The site includes a custom logo, resume link, project images, service cards, testimonials, and a contact form.
+"# Comp229-assignment3-frontend" 
