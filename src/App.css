@@ -1,0 +1,446 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  color: #111827;
+}
+
+.navbar {
+  background: #111827;
+  color: white;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logoImage {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navLinks a:hover {
+  color: #22c55e;
+}
+
+.page {
+  padding: 60px 8%;
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #e5f7ed, #f4f7fb);
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+.tagline {
+  color: #16a34a;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.mission {
+  max-width: 750px;
+}
+
+.buttons {
+  display: flex;
+  gap: 14px;
+  margin-top: 25px;
+}
+
+.btn {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn.secondary {
+  background: #111827;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+
+.serviceIcon {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.contactLayout {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 25px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+input,
+textarea {
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 130px;
+}
+
+@media (max-width: 850px) {
+
+  .navbar,
+  .navLinks,
+  .buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .grid,
+  .contactLayout {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+}
+
+.aboutCard {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.profilePhoto {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #22c55e;
+}
+
+@media (max-width: 850px) {
+  .aboutCard {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.projectCard {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.projectPhoto {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  background: #f8fafc;
+}
+
+.projectContent {
+  padding: 28px;
+  text-align: center;
+}
+
+.projectContent h2 {
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.projectContent p {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.serviceCard {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.servicePhoto {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  background: #f8fafc;
+}
+
+.serviceContent {
+  padding: 24px;
+}
+
+.serviceContent h2 {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 850px) {
+  .serviceGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .servicePhoto {
+    height: 240px;
+  }
+}
+
+.adminDashboard {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.adminDashboard a {
+    background-color: #101827;
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.adminDashboard a:hover {
+    background-color: #263750;
+}
+
+@media (max-width: 650px) {
+    .adminDashboard {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+}
+
+.adminPage {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 30px;
+}
+
+.adminHeading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.adminButton,
+.editButton,
+.deleteButton {
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.adminButton {
+    background-color: #101827;
+    color: white;
+}
+
+.tableContainer {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.adminTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.adminTable th,
+.adminTable td {
+    border: 1px solid #cccccc;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.adminTable th {
+    background-color: #101827;
+    color: white;
+}
+
+.actionButtons {
+    display: flex;
+    gap: 8px;
+}
+
+.editButton {
+    background-color: #2463a9;
+    color: white;
+}
+
+.deleteButton {
+    background-color: #b42318;
+    color: white;
+}
+
+.errorMessage {
+    background-color: #ffe5e5;
+    color: #a40000;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.backLink {
+    display: inline-block;
+    margin-top: 25px;
+    color: #101827;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .adminHeading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .actionButtons {
+        flex-direction: column;
+    }
+}
+
+.adminForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 30px auto 0;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.adminForm label {
+    margin-top: 16px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.adminForm input,
+.adminForm textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.adminForm textarea {
+    resize: vertical;
+}
+
+.formButtons {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.cancelButton {
+    padding: 10px 16px;
+    border-radius: 6px;
+    background-color: #666666;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.adminButton:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}

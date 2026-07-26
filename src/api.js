@@ -1,0 +1,1 @@
+export const API_URL = "https://comp229-assignment2-backend.vercel.app";
